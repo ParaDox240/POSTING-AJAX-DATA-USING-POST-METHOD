@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML POST Example</title>
+</head>
+<body>
+    <h1>Submit XML Data</h1>
+    <form action="file.php" method="POST" enctype="application/xml">
+        <textarea name="xmlData" rows="10" cols="50">
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <user>
+        <name>John Doe</name>
+        <email>john@example.com</email>
+        <age>30</age>
+    </user>
+</data>
+        </textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
